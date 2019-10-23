@@ -5,6 +5,7 @@
     android:id="@+id/linearLayout7"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EEFF41"
     tools:context=".MainActivity">
 
     <TextView
@@ -30,12 +31,13 @@
 
     <EditText
         android:id="@+id/from"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/fromHint"
         android:inputType="numberDecimal"
         app:layout_constraintBaseline_toBaselineOf="@+id/fromUnits"
+        app:layout_constraintEnd_toStartOf="@+id/fromUnits"
         app:layout_constraintStart_toStartOf="@+id/textView5" />
 
     <TextView
@@ -45,6 +47,7 @@
         android:layout_marginBottom="12dp"
         android:text="@string/fromUnits"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/from" />
 
 
@@ -61,12 +64,13 @@
 
     <EditText
         android:id="@+id/to"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/toHint"
         android:inputType="numberDecimal"
         app:layout_constraintBaseline_toBaselineOf="@+id/toUnits"
+        app:layout_constraintEnd_toStartOf="@+id/toUnits"
         app:layout_constraintStart_toStartOf="@+id/textView2" />
 
     <TextView
@@ -76,6 +80,7 @@
         android:layout_marginBottom="12dp"
         android:text="@string/toUnits"
         app:layout_constraintBottom_toTopOf="@+id/modeButton"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/to" />
 
 
